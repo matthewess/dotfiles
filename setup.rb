@@ -114,9 +114,7 @@ class Dot
   end
 
   def zsh
-    `zsh` 
-    `git clone --recursive https://github.com/jay-hankins/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
-    `chsh -s /bin/zsh`
+    `./prezto.sh`
   end
 
   def brew_and_bundle
