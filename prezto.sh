@@ -1,4 +1,11 @@
 #!/usr/bin/env zsh
+
+# This script clones my prezto configuration
+# and installs it in the same manner as the
+# original prezto install script.
+#
+# https://github.com/sorin-ionescu/prezto/
+
 git clone --recursive https://github.com/jay-hankins/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 chsh -s /bin/zsh
 setopt EXTENDED_GLOB

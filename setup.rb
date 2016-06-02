@@ -13,7 +13,7 @@ class DotParse
     options.verbose = false
 
     opt_parser = OptionParser.new do |opts|
-      opts.banner = "Usage: setup.rb [--install|--clean|--zsh|--vim|--brew|--force]"
+      opts.banner = "Usage: setup.rb [--install|--clean|--prezto|--vim|--brew|--force]"
 
       opts.separator ""
       opts.separator "Specific options:"
@@ -34,13 +34,13 @@ class DotParse
       end
 
       opts.on("-b", "--brew",
-              "Installs brew and bundles default apps") do |zsh|
+              "Installs brew and bundles default apps") do |prezto|
         options.brew = brew;
       end
 
-      opts.on("-z", "--zsh",
-              "installs prezto") do |zsh|
-        options.zsh = zsh
+      opts.on("-p", "--prezto",
+              "installs prezto") do |prezto|
+        options.prezto = prezto
       end
 
       opts.on("-v", "--vim",
@@ -113,7 +113,7 @@ class Dot
     `vim +PlugInstall +qall`
   end
 
-  def zsh
+  def prezto
     `./prezto.sh`
   end
 
@@ -172,6 +172,6 @@ elsif options.vim
   dot.vim
 elsif options.brew
   dot.brew_and_bundle
-elsif options.zsh
-  dot.zsh
+elsif options.prezto
+  dot.prezto
 end
