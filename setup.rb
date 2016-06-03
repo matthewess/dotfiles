@@ -114,7 +114,7 @@ class Dot
   end
 
   def prezto
-    `sudo -u $USER ./prezto.sh`
+    `sudo -i -u $USER ./dotfiles/prezto.sh`
   end
 
   def install_pip
