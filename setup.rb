@@ -34,7 +34,7 @@ class DotParse
       end
 
       opts.on("-b", "--brew",
-              "creates brew in the home directory") do |prezto|
+              "creates brew in the home directory") do |brew|
         options.brew = brew
       end
 
