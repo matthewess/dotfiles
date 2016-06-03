@@ -131,8 +131,7 @@ class Dot
   end
 
   def brew
-    `sudo -v`
-    `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+    exec '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
   end
 
   def bundle
