@@ -22,7 +22,7 @@ cask 'iterm2'
 cask 'ngrok'
 cask 'slack'
 cask 'spotify'
+cask 'sublime-text3'
 cask 'transmission'
 cask 'visual-studio-code'
 cask 'vlc'
-cask `sublime-text3`
