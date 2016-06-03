@@ -126,20 +126,17 @@ class Dot
   end
 
   def brew_and_bundle
-    `sudo -v`
     brew
     bundle
   end
 
   def brew
-    `sudo -v`
-    `echo | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+    `sudo -E echo | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
   end
 
   def bundle
-    `sudo -v`
-    `brew tap homebrew/bundle`
-    `brew bundle`
+    `sudo -E brew tap homebrew/bundle`
+    `sudo -E brew bundle`
   end
 
   private
