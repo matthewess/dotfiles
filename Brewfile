@@ -11,7 +11,7 @@ brew 'wget'
 
 # install cask
 tap 'caskroom/cask'
-tap `caskroom/versions`
+tap 'caskroom/versions'
 
 # install apps
 cask 'cyberduck'
