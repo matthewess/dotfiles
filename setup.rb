@@ -126,6 +126,7 @@ class Dot
   end
 
   def brew_and_bundle
+    `sudo -v`
     brew
     bundle
   end
@@ -136,6 +137,7 @@ class Dot
   end
 
   def bundle
+    `sudo -v`
     `brew tap homebrew/bundle`
     `brew bundle`
   end
