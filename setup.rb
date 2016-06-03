@@ -135,8 +135,8 @@ class Dot
   end
 
   def bundle
-    `sudo -E brew tap homebrew/bundle`
-    `sudo -E brew bundle`
+    `brew tap homebrew/bundle`
+    `brew bundle`
   end
 
   private
