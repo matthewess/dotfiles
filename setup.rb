@@ -35,7 +35,7 @@ class DotParse
 
       opts.on("-b", "--brew",
               "Installs brew and bundles default apps") do |prezto|
-        options.brew = brew;
+        options.brew = brew
       end
 
       opts.on("-p", "--prezto",
@@ -115,6 +115,14 @@ class Dot
 
   def prezto
     `./prezto.sh`
+  end
+
+  def install_pip
+    `sudo easy_install pip`
+  end
+
+  def config_iterm
+  `cp #{dotfile_path('iterm')} #{home_path('Library/Preferences/com.googlecode.iterm2.plist')}`
   end
 
   def brew_and_bundle
