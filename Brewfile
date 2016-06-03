@@ -11,6 +11,7 @@ brew 'wget'
 
 # install cask
 tap 'caskroom/cask'
+tap `caskroom/versions`
 
 # install apps
 cask 'cyberduck'
@@ -25,3 +26,4 @@ cask 'sublime-text'
 cask 'transmission'
 cask 'visual-studio-code'
 cask 'vlc'
+cask `sublime-text3`
