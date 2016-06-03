@@ -1,6 +1,5 @@
 # install commandline utils
 brew 'asciinema'
-brew 'duti'
 brew 'httpie'
 brew 'mongodb'
 brew 'node'

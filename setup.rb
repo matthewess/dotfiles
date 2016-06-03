@@ -34,7 +34,7 @@ class DotParse
       end
 
       opts.on("-b", "--brew",
-              "creates brew in the home directory") do |brew|
+              "nstalls brew and bundles default apps") do |brew|
         options.brew = brew
       end
 
@@ -135,7 +135,7 @@ class Dot
   end
 
   def bundle
-    `brew 'tap homebrew/bundle'`
+    `brew tap homebrew/bundle`
     `brew bundle`
   end
 
