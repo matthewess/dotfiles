@@ -1,0 +1,53 @@
+###############################################################################
+# Menubar                                                                     #
+###############################################################################
+
+# Show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+###############################################################################
+# Dock                                                                        #
+###############################################################################
+
+# Make the dock smaller
+defaults write com.apple.dock tilesize -int 32
+
+###############################################################################
+# Finder                                                                      #
+###############################################################################
+
+# Remove recent tags
+defaults write com.apple.finder ShowRecentTags -int 0
+
+# Always display files and folders in finder as a list
+defaults write com.apple.finder FXPreferredViewStyle Nlsv
+
+# finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# finder: set window title to full POSIX file path of current folder
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# When performing a search, search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Don't write DS files to network stores
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+# Enable snap-to-grid for icons on the desktop and in other icon views
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+
+###############################################################################
+# Keyboard                                                                    #
+###############################################################################
+
+# Prevent iTunes from launching when pressing the media keys on the keyboard
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist

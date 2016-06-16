@@ -87,6 +87,7 @@ class Dot
         end
       end
     end
+    `source #{{home}/.osx}`
   end
 
   def clean
