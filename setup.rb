@@ -87,9 +87,7 @@ class Dot
         end
       end
     end
-    puts "#{home}"
-    cmd = "source #{{home}/.osx}"
-    `#{cmd}`
+    `. #{{home}/.osx`
   end
 
   def clean
