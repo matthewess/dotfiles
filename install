@@ -18,3 +18,5 @@ brew tap homebrew/bundle
 brew bundle
 
 ./prezto.sh
+
+./osx
