@@ -18,5 +18,6 @@
 	default = simple
 [diff]
 	tool = vimdiff
+	submodule = log
 [difftool]
 	prompt = false
