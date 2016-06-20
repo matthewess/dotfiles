@@ -11,10 +11,10 @@ set cursorline			"highlight current line
 set wildmenu			"autocompletion menu
 set showmatch			"highlight matching [{()}]
 syntax enable			"syntax highlighting
-set tabstop=4			"number of visual spaces per TAB when reading
-set softtabstop=4		"number of spaces per TAB when editing
+set tabstop=2			"number of visual spaces per TAB when reading
+set softtabstop=2		"number of spaces per TAB when editing
 set expandtab			"tabs are spaces
-set shiftwidth=4        "indents
+set shiftwidth=2        "indents
 filetype plugin indent on	"filetype specific indents
 cmap w!! w !sudo tee >/dev/null %
 set ai                  "auto indent
