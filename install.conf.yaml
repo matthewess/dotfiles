@@ -14,3 +14,5 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [./prezto.sh, Installing prezto]
+  - [./osx, Setting osx prefs]
