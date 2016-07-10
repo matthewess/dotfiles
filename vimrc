@@ -30,6 +30,7 @@ colorscheme base16-eighties
 "airline options
 set laststatus=2
 let g:airline_powerline_fonts=1
+let g:airline_theme='base16_eighties'
 
 "syntastic options
 let g:syntastic_auto_loc_list=1
@@ -40,3 +41,6 @@ let g:syntastic_java_javac_classpath = "./lib/*.jar\n./src"
 "view saving
 au BufWinLeave ?* mkview
 au BufWinEnter ?* silent loadview
+
+"nerdtree
+let NERDTreeShowHidden=1
