@@ -14,6 +14,7 @@
   fileblame = "log --name-only --diff-filter=A --date=short --pretty=format:\"%an <%ae> on %ad in %h\" --"
   co = "checkout"
   db = delete-branch
+  cb = rev-parse --abbrev-ref HEAD 
   # first-commit = ! git log --decorate=short | tail -n 5 | head -n 1 | grep "\b[A-Fa-f0-9]+"
 [push]
   default = simple

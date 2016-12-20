@@ -23,7 +23,6 @@ set backspace=indent,eol,start
 set ww=<,>,[,]          "wrap
 
 "theme options
-set background=dark
 let base16colorspace=256
 colorscheme base16-eighties
 
@@ -43,4 +42,11 @@ au BufWinLeave ?* mkview
 au BufWinEnter ?* silent loadview
 
 "nerdtree
+"show hidden files
 let NERDTreeShowHidden=1
+"open on vim open
+autocmd vimenter * NERDTree
+"switch to editing window
+autocmd vimenter * wincmd p
+"close if only nerdtree is left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
