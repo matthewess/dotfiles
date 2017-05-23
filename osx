@@ -20,7 +20,7 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.finder ShowRecentTags -int 0
 
 # Always display files and folders in finder as a list
-defaults write com.apple.finder FXPreferredViewStyle Nlsv
+# defaults write com.apple.finder FXPreferredViewStyle Nlsv
 
 # finder: show hidden files by default
 # defaults write com.apple.finder AppleShowAllFiles -bool true
