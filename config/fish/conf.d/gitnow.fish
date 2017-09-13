@@ -1,0 +1,1 @@
+/Users/mess/.config/fisherman/gitnow/conf.d/gitnow.fish
